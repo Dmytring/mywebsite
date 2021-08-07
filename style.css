@@ -10,10 +10,22 @@ text-align: center;
     max-width: 928px;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    text-align: left;
+    align-items: center;
     padding: 15px;
     padding-left: 45px;
     margin: 0 auto;
+}
+
+.menu-list {
+    display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.menu-link {
+display: block;
+padding: 15px;
+margin: 0;
 }
 
 .footer-main {
@@ -36,14 +48,14 @@ h1 {
     font: 2em Arial, sans-serif;
     text-shadow: azure 1px 1px 0, azure 2px 2px 0, 
     azure 3px 3px 0;
-    color: blue
-                
+    color: blue    
 }
+
 
 .feature-list {
     
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
     
 }
